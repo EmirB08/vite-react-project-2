@@ -1,12 +1,13 @@
-import Counter from './components/Counter.jsx';
+import Navigation from "./components/Navigation";
 
-function App() {
+const App = () => {
     return (
-        <div className="Testing">
-            <h1>Counter Example </h1>
-            <Counter />
+        <div className="App">
+            <Navigation />
         </div>
     );
-}
+};
 
 export default App;
+
+
