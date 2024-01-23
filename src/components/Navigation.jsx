@@ -1,23 +1,23 @@
 import { useState } from "react";
 import Counter from "./Counter";
-// will import Names component later
+import FilterNames from "./FilterNames";
 
 const Navigation = () => {
-    const [currentPage, setCurrentPage] = useState("home");
+    const [currentPage, setCurrentPage] = useState("home"); // state variable
 
     return (
         <div>
             <div>
-                <button onClick={() => setCurrentPage("counter")}>Go to Counter App</button>
-                <button onClick={() => setCurrentPage("names")}>Go to Names App</button>
+                <button onClick={() => setCurrentPage("home")}>Home</button>
+                <button onClick={() => setCurrentPage("counter")}>Counter Example</button>
+                <button onClick={() => setCurrentPage("names")}>Filtering Example</button>
+                
             </div>
-
+            {currentPage === "home" && <div>Pick an example!</div>}
             {currentPage === "counter" && <Counter />}
-            {currentPage === "names" && <div>Placeholder</div>}
-            {currentPage === "home"}
+            {currentPage === "names" && <FilterNames />}
         </div>
     );
 };
 
 export default Navigation;
-
