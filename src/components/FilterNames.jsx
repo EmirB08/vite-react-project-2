@@ -15,13 +15,14 @@ const FilterNames = () => { // state variables
 
 return (
     <div>
-        <select value={genderFilter} onChange={(e) => setGenderFilter(e.target.value)}> 
+        <select className="dropdown-menu" value={genderFilter} onChange={(e) => setGenderFilter(e.target.value)}> 
         <option value="all">All</option>
         <option value="male">Male</option>
         <option value="female">Female</option>
         </select>
         <input
         type="text"
+        className="search-input"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         placeholder="Search names..."

@@ -6,8 +6,8 @@ const Navigation = () => {
     const [currentPage, setCurrentPage] = useState("home"); // state variable
 
     return (
-        <div>
-            <div>
+        <div >
+            <div className="navigation-bar">
                 <button onClick={() => setCurrentPage("home")}>Home</button>
                 <button onClick={() => setCurrentPage("counter")}>Counter Example</button>
                 <button onClick={() => setCurrentPage("names")}>Filtering Example</button>
