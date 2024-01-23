@@ -13,7 +13,7 @@ const Navigation = () => {
                 <button onClick={() => setCurrentPage("names")}>Filtering Example</button>
                 
             </div>
-            {currentPage === "home" && <div>Pick an example!</div>}
+            {currentPage === "home" && <div>Just a small project showcasing some examples of using UseState. Pick an example!</div>}
             {currentPage === "counter" && <Counter />}
             {currentPage === "names" && <FilterNames />}
         </div>

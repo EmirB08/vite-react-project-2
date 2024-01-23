@@ -116,7 +116,14 @@ button:focus-visible {
   color: #ff69b4;
 }
 
+ul {
+  list-style-type: none;
+  margin-top: 1em;
+  padding: 0;
+  max-width: 520px;
+}
 li {
-  display: inline-block; /* Set display to inline-block for horizontal layout */
-  margin-right: 10px; /* Add spacing between list items */
+  max-width: 519px;
+  display: inline-block;
+  margin-right: 10px;
 }
