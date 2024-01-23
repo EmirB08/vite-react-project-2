@@ -107,3 +107,16 @@ button:focus-visible {
   width: 78%;
   font-size: 16px;
 }
+
+.male-name {
+  color: #00bfff;
+}
+
+.female-name {
+  color: #ff69b4;
+}
+
+li {
+  display: inline-block; /* Set display to inline-block for horizontal layout */
+  margin-right: 10px; /* Add spacing between list items */
+}

@@ -28,7 +28,10 @@ return (
         placeholder="Search names..."
         />
     <ul>
-        {filteredNames.map((person, index) => <li key={index}>{person.name}</li>)}
+        {filteredNames.map((person, index) => 
+        <li key={index} className={person.className}>
+            {person.name}
+        </li>)}
     </ul>
     </div>
 );
