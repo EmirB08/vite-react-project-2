@@ -30,6 +30,7 @@ const FilterNames = () => {
 			<Stack direction="row" spacing={2} sx={{ marginBottom: "20px" }}>
 				<Select
 					className="dropdown-menu"
+					color="secondary"
 					value={genderFilter}
 					onChange={(e) => setGenderFilter(e.target.value)}>
 					<MenuItem value="all">All</MenuItem>
@@ -37,8 +38,8 @@ const FilterNames = () => {
 					<MenuItem value="female">Female</MenuItem>
 				</Select>
 				<TextField
-					type="text"
-					className="search-input"
+					type="search"
+					color="secondary"
 					value={searchQuery}
 					onChange={(e) => setSearchQuery(e.target.value)}
 					placeholder="Filter names"

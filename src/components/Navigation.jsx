@@ -18,23 +18,23 @@ const Navigation = () => {
 				height: "100vh",
 			}}>
 			<Stack direction="row" spacing={2} sx={{ marginTop: "20px", marginBottom: "200px" }}>
-				<Button variant="outlined" onClick={() => setCurrentPage("home")}>
+				<Button color="secondary" onClick={() => setCurrentPage("home")} sx={ {fontWeight: "bold"}}>
 					Home
 				</Button>
-				<Button variant="outlined" onClick={() => setCurrentPage("counter")}>
+				<Button color="secondary" onClick={() => setCurrentPage("counter")} sx={ {fontWeight: "bold"}}>
 					Counter Example
 				</Button>
-				<Button variant="outlined" onClick={() => setCurrentPage("names")}>
+				<Button color="secondary" onClick={() => setCurrentPage("names")} sx={ {fontWeight: "bold"}}>
 					Filtering Example
 				</Button>
 			</Stack>
 			{currentPage === "home" && (
 				<>
-					<Typography variant="h3" component="h1" gutterBottom sx={{ fontWeight: "bold", color: "primary.main" }}>
-						Reactive variables!
+					<Typography variant="h4" component="h3" gutterBottom sx={{ fontWeight: "bold", color: "#00bfff" }}>
+					Reactive variables!
 					</Typography>
-					<Typography variant="body1" sx={{ fontWeight: "bold" }}>
-					Just a small project showcasing use of reactive variables. Pick an example!
+					<Typography variant="body1" sx={{ fontWeight: "bold", color: "#00bfff" }}>
+					Pick an example!
 					</Typography>
 				</>
 			)}
